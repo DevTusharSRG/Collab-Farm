@@ -9,7 +9,7 @@ function PropertyDetails() {
     useEffect(() => {
         const fetchPropertyDetails = async () => {
             try {
-                const response = await fetch(`http://localhost:4000/getproperties/${pid}`, {
+                const response = await fetch(`https://collab-farm-server.onrender.com/getproperties/${pid}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'

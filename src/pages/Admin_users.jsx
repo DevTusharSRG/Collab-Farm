@@ -7,7 +7,7 @@ export const Admin_users = () => {
 
     const getAllUsersData = async () => {
         try {
-            const response = await fetch('http://localhost:4000/admin/users', {
+            const response = await fetch('https://collab-farm-server.onrender.com/admin/users', {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken
@@ -30,7 +30,7 @@ export const Admin_users = () => {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`http://localhost:4000/admin/users/delete/${id}`, {
+            const response = await fetch(`https://collab-farm-server.onrender.com/admin/users/delete/${id}`, {
                 method: "DELETE",
                 headers: {
                     // Add any authorization headers if needed

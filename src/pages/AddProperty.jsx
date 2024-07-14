@@ -24,7 +24,7 @@ function AddProperty() {
         e.preventDefault();
         console.log(formData)
         try {
-            const response = await fetch('http://localhost:4000/form/addproperty', {
+            const response = await fetch('https://collab-farm-server.onrender.com/form/addproperty', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

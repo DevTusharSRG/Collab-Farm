@@ -6,7 +6,7 @@ export const Admin_services = () => {
     useEffect(() => {
         const fetchServices = async () => {
             try {
-                const response = await fetch('http://localhost:4000/data/getservice', {
+                const response = await fetch('https://collab-farm-server.onrender.com/data/getservice', {
                     method: "GET",
                     headers: {
                         // Add any authorization headers if needed
@@ -29,7 +29,7 @@ export const Admin_services = () => {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`http://localhost:4000/admin/services/delete/${id}`, {
+            const response = await fetch(`https://collab-farm-server.onrender.com/admin/services/delete/${id}`, {
                 method: "DELETE",
                
             });

@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
   const userAuthentication = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch(`http://localhost:4000/user`, {
+      const response = await fetch(`https://collab-farm-server.onrender.com/user`, {
         method: "GET",
         headers: {
           Authorization: authorizationToken,
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
 
   const getServices = async () => {
     try {
-      const response = await fetch(`http://localhost:4000/data/getservice`, {
+      const response = await fetch(`https://collab-farm-server.onrender.com/data/getservice`, {
         method: "GET",
       });
 

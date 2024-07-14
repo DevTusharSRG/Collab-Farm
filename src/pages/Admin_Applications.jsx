@@ -7,7 +7,7 @@ export const Admin_Applications = () => {
 
     const fetchApplications = async () => {
         try {
-            const response = await fetch('http://localhost:4000/form/getapplication', {
+            const response = await fetch('https://collab-farm-server.onrender.com/form/getapplication', {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,
@@ -35,7 +35,7 @@ export const Admin_Applications = () => {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`http://localhost:4000/form/getapplication/delete/${id}`, {
+            const response = await fetch(`https://collab-farm-server.onrender.com/form/getapplication/delete/${id}`, {
                 method: "DELETE",
                 headers: {
                     Authorization: authorizationToken

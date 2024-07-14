@@ -39,7 +39,7 @@ const ApplicationForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:4000/form/apply/${pid}`, {
+            const response = await fetch(`https://collab-farm-server.onrender.com/form/apply/${pid}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

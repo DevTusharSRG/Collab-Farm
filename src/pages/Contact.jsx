@@ -34,7 +34,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:4000/form/contact', {
+            const response = await fetch('https://collab-farm-server.onrender.com/form/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

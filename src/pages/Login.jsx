@@ -4,7 +4,7 @@ import loginImage from '../images/login.jpg'; // Importing the image
 import { useAuth } from '../store/auth';
 import {toast} from 'react-toastify'
 
-const URL ="http://localhost:4000/login"
+const URL ="https://collab-farm-server.onrender.com/login"
 
 const Login = () => {
     const [user, setUser] = useState({

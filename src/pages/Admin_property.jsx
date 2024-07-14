@@ -7,7 +7,7 @@ export const Admin_property = () => {
 
     const fetchProperties = async () => {
         try {
-            const response = await fetch('http://localhost:4000/getproperties', {
+            const response = await fetch('https://collab-farm-server.onrender.com/getproperties', {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,
@@ -35,7 +35,7 @@ export const Admin_property = () => {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`http://localhost:4000/admin/properties/delete/${id}`, {
+            const response = await fetch(`https://collab-farm-server.onrender.com/admin/properties/delete/${id}`, {
                 method: "DELETE",
                 headers: {
                     Authorization: authorizationToken

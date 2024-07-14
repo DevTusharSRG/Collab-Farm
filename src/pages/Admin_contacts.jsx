@@ -8,7 +8,7 @@ export const Admin_contacts = () => {
     const fetchContacts = async () => {
         try {
             
-            const response = await fetch('http://localhost:4000/admin/contact', {
+            const response = await fetch('https://collab-farm-server.onrender.com/admin/contact', {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken
@@ -31,7 +31,7 @@ export const Admin_contacts = () => {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`http://localhost:4000/admin/contacts/delete/${id}`, {
+            const response = await fetch(`https://collab-farm-server.onrender.com/admin/contacts/delete/${id}`, {
                 method: "DELETE",
                 headers: {
                     // Add any authorization headers if needed

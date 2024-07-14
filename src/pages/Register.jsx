@@ -3,7 +3,7 @@ import {useNavigate, Link } from 'react-router-dom';
 import registerImage from '../images/login.jpg'; // Importing the image
 import { useAuth } from '../store/auth';
 import {toast} from 'react-toastify'
-const URL ="http://localhost:4000/register"
+const URL ="https://collab-farm-server.onrender.com/register"
 
 
 const Register = () => {
