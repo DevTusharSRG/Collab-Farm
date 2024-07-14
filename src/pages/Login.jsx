@@ -45,11 +45,12 @@ const Login = () => {
                 toast.success("Logged in Successfully");
                 navigate("/admin");
             } else {
+                console.log("Logged in")
                 setUser({
                     email: "",
                     password: ""
                 });
-                toast.success("Logged in Successfully");
+                // toast.success("Logged in Successfully");
                 navigate("/");
             }
             
